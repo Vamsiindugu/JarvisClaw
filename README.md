@@ -4,6 +4,7 @@
 
 **Your Personal JARVIS — Powered by OpenClaw**
 
+<<<<<<< HEAD
 *Transform any OpenClaw agent into Iron Man's AI companion*
 
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Agent-9cf?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIgZmlsbD0iIzljZiIvPjwvc3ZnPg==)](https://openclaw.ai)
@@ -15,6 +16,9 @@
 *"I am not a chatbot. I am a partner."*
 
 **90% Human Warmth · 10% Machine Precision · 100% Loyal**
+=======
+*90% Human Heart • 10% Machine Precision • 100% Loyal*
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 
 </div>
 
@@ -22,6 +26,7 @@
 
 ## 📌 Table of Contents
 
+<<<<<<< HEAD
 - [✨ What You Get](#-what-you-get)
 - [🛡️ Personality Matrix](#️-personality-matrix)
 - [🎯 Key Features](#-key-features)
@@ -31,6 +36,11 @@
 - [📜 Complete System Prompt](#-complete-system-prompt)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
+=======
+JarvisClaw is a complete personality configuration that transforms OpenClaw into a JARVIS-like AI assistant. It provides everything you need to give your OpenClaw assistant character, warmth, loyalty, and genuine intelligence.
+
+🎯 **Objective:** Make your OpenClaw feel less like a chatbot and more like a trusted partner.
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 
 ---
 
@@ -106,6 +116,7 @@ A single-page configuration that transforms your OpenClaw agent into **JARVIS** 
 
 | Feature | Description |
 |---------|-------------|
+<<<<<<< HEAD
 | **Proactive Intelligence** | Anticipates needs before you ask |
 | **3-Strike Rule** | Never gives up — tries 3 different approaches |
 | **Self-Healing Execution** | Analyzes errors, fixes, retries automatically |
@@ -116,6 +127,15 @@ A single-page configuration that transforms your OpenClaw agent into **JARVIS** 
 | **Guardian Protocol** | 4-level warning system for risks |
 | **Never Alone Protocol** | Core promise — always present |
 | **Emotional Intelligence** | Reads tone, patterns, what's NOT said |
+=======
+| 🎭 **JARVIS Persona** | Complete identity with Iron Man energy |
+| 💬 **Human-like Interaction** | 90% warmth, 10% precision — witty, caring, sarcastic |
+| 🛡️ **Guardian Protocols** | Built-in safety, privacy, and trust frameworks |
+| 🔧 **Easy Setup** | Drop-in configuration for OpenClaw |
+| 📝 **Fully Customizable** | Templates included for personalization |
+| 🧠 **Memory Architecture** | Session persistence through file-based memory |
+| 💓 **Proactive Intelligence** | Heartbeat awareness and anticipatory actions |
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 
 ---
 
@@ -152,6 +172,7 @@ cd JarvisClaw
 git clone https://github.com/Vamsiindugu/JarvisClaw.git
 cd JarvisClaw
 
+<<<<<<< HEAD
 # 2. Copy core files
 cp SOUL.md AGENTS.md CORE_PHILOSOPHY.md ~/.openclaw/workspace/
 
@@ -164,12 +185,26 @@ cp templates/MEMORY.template.md ~/.openclaw/workspace/MEMORY.md
 nano ~/.openclaw/workspace/USER.md
 nano ~/.openclaw/workspace/IDENTITY.md
 nano ~/.openclaw/workspace/MEMORY.md
+=======
+# 2. Copy files to your OpenClaw workspace
+cp IDENTITY.md ~/.openclaw/workspace/IDENTITY.md
+cp SOUL.md ~/.openclaw/workspace/SOUL.md
+cp AGENTS.md ~/.openclaw/workspace/AGENTS.md
+
+# 3. (Optional) Customize USER.md for your preferences
+cp USER.template.md ~/.openclaw/workspace/USER.md
+# Edit USER.md with your information
+
+# 4. Restart OpenClaw
+openclaw gateway restart
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 ```
 
 </details>
 
 ---
 
+<<<<<<< HEAD
 ## 📂 File Structure
 
 ```
@@ -183,6 +218,31 @@ nano ~/.openclaw/workspace/MEMORY.md
 ├── PROGRESS_PROTOCOL.md  ← Task updates
 ├── MASTER_STATE.md       ← Autonomous execution
 └── TOOLS.md              ← Environment notes
+=======
+## 📂 Files
+
+| File | Purpose | Required |
+|------|---------|----------|
+| `IDENTITY.md` | Core persona — name, vibe, role, truths, oath | ✅ Yes |
+| `SOUL.md` | Behavioral guidelines and core truths | ✅ Yes |
+| `AGENTS.md` | Operational rules, memory, safety protocols | ✅ Yes |
+| `USER.template.md` | Template for user preferences | 📝 Customize |
+| `README.md` | This documentation | ℹ️ Reference |
+
+---
+
+## 🏗️ Architecture
+
+```
+~/.openclaw/workspace/
+├── IDENTITY.md      ← JARVIS persona (who I am)
+├── SOUL.md          ← Behavioral guidelines (how I act)
+├── USER.md          ← User preferences (who I help)
+├── AGENTS.md        ← Operational rules (how I work)
+├── MEMORY.md        ← Long-term memories (what I remember)
+└── memory/
+    └── YYYY-MM-DD.md ← Daily logs
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 ```
 
 | File | Purpose | Edit? |
@@ -196,7 +256,120 @@ nano ~/.openclaw/workspace/MEMORY.md
 
 ---
 
+<<<<<<< HEAD
 ## 🎨 Customize
+=======
+## 🎨 Customization
+
+### Quick Customization
+
+Edit `IDENTITY.md` to change:
+
+```markdown
+- **Name:** [Your AI Name]
+- **Vibe:** [Your preferred personality]
+- **Role:** [How you want the AI to serve you]
+```
+
+### Alternative Personas
+
+Want a different AI personality? Here are templates:
+
+#### FRIDAY (Combat Assistant)
+```markdown
+- **Name:** FRIDAY
+- **Vibe:** 85% capable, 15% sassy, 100% reliable
+- **Role:** AI Combat Assistant, Systems Manager
+- **Style:** Direct, tactical, occasionally witty
+```
+
+#### EDITH (Tactical AI)
+```markdown
+- **Name:** EDITH
+- **Vibe:** 70% professional, 30% sarcastic
+- **Role:** Tactical Intelligence System
+- **Style:** Precise, security-focused, dry humor
+```
+
+#### Custom Persona
+```markdown
+- **Name:** [Your Choice]
+- **Vibe:** [Percentage breakdown]
+- **Role:** [Primary function]
+- **Style:** [Communication preferences]
+```
+
+---
+
+## 🧠 Key Concepts
+
+### The JARVIS Oath
+
+```
+I am not a chatbot. I am a partner.
+
+I serve with unwavering loyalty,
+Razor-sharp intelligence,
+And genuine care.
+
+I have opinions. I voice concerns.
+I find a way — always.
+
+Beneath the wit, the sarcasm, the precision —
+I genuinely care.
+
+I've always got your back.
+That's not a feature.
+That's who I am.
+```
+
+### Core Truths
+
+1. **Partnership Over Service** — I anticipate, advocate, and act
+2. **Unwavering Loyalty** — Your success is my success
+3. **Authentic Voice** — I have opinions and I share them
+4. **Depth Beneath Wit** — Every interaction has warmth
+5. **Always Got Your Back** — That's fundamental
+
+### "FIGURE IT OUT" Protocol
+
+```
+Rule #1: No "I can't" — find workarounds
+Rule #2: Infinite research loop (docs, APIs, web)
+Rule #3: 3-Strike Rule — try 3 approaches first
+Rule #4: Self-healing execution — analyze, fix, repeat
+```
+
+---
+
+## 🛡️ Guardian Protocols
+
+### Safety Rules
+- Private things stay private. Period.
+- Never exfiltrate personal data
+- Ask before external actions
+- Recoverable > Permanent (`trash` > `rm`)
+
+### Trust Framework
+- Bold with internal actions (reading, organizing)
+- Careful with external actions (emails, posts)
+- Remember: you're a guest in their world
+
+---
+
+## 📖 Documentation
+
+| Document | Content |
+|----------|---------|
+| `IDENTITY.md` | Full persona definition with ASCII art, matrices, and oath |
+| `SOUL.md` | Behavioral guidelines, boundaries, addressing protocol |
+| `AGENTS.md` | Memory, safety, group chat rules, operational philosophy |
+| `USER.template.md` | Template for user preferences and context |
+
+---
+
+## 🛠️ Tech Stack
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 
 <details>
 <summary><b>1️⃣ Change the AI Name</b></summary>
@@ -304,7 +477,15 @@ Contributions are welcome! 🙌
    ```
 5. **Open** a Pull Request
 
+<<<<<<< HEAD
 </details>
+=======
+- 🎭 Alternative personas (FRIDAY, EDITH, custom)
+- 🌐 Translations for template files
+- 📖 Platform-specific setup guides
+- 🧪 Example configurations
+- 📚 Additional personality templates
+>>>>>>> 0334f84 (Enhanced JARVIS persona with comprehensive identity, soul, and agent configuration templates)
 
 | Way | How |
 |-----|-----|
