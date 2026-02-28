@@ -17,6 +17,40 @@ NC='\033[0m' # No Color
 
 # Workspace
 WORKSPACE="$HOME/.openclaw/workspace"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# ─── Helper Functions ──────────────────────────────────────────
+
+# Function to safely copy files and report status
+copy_file() {
+    local src="$1"
+    local dest="$2"
+    local name="$3"
+
+    if [ -f "$src" ]; then
+        cp "$src" "$dest"
+        echo -e "   ${GREEN}✓${NC} $name"
+    else
+        echo -e "   ${RED}✗${NC} $name (File not found)"
+        return 0
+    fi
+}
+
+# Function to safely do cross-platform string replacement
+# Uses '|' as delimiter to avoid path collision (e.g., Asia/Calcutta)
+replace_text() {
+    local file="$1"
+    local search="$2"
+    local replace="$3"
+
+    if [ -f "$file" ]; then
+        # Try GNU sed first, fallback to BSD (macOS) sed
+        sed -i "s|$search|$replace|g" "$file" 2>/dev/null || \
+        sed -i '' "s|$search|$replace|g" "$file"
+    fi
+}
+
+# ─── Main Script ───────────────────────────────────────────────
 
 echo ""
 echo -e "${CYAN}╔═══════════════════════════════════════════════════════════╗${NC}"
@@ -34,9 +68,6 @@ if [ ! -d "$WORKSPACE" ]; then
     mkdir -p "$WORKSPACE"
 fi
 
-# Get script directory
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 echo -e "${BLUE}📦 Installing JARVIS persona...${NC}"
 echo ""
 
@@ -45,12 +76,12 @@ echo ""
 # ─────────────────────────────────────────────────────────────────
 echo -e "${CYAN}[1/4] Copying core files...${NC}"
 
-cp "$SCRIPT_DIR/SOUL.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} SOUL.md"
-cp "$SCRIPT_DIR/AGENTS.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} AGENTS.md"
-cp "$SCRIPT_DIR/CORE_PHILOSOPHY.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} CORE_PHILOSOPHY.md"
-cp "$SCRIPT_DIR/PROGRESS_PROTOCOL.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} PROGRESS_PROTOCOL.md"
-cp "$SCRIPT_DIR/MASTER_STATE.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} MASTER_STATE.md"
-cp "$SCRIPT_DIR/TOOLS.md" "$WORKSPACE/" 2>/dev/null && echo -e "   ${GREEN}✓${NC} TOOLS.md"
+copy_file "$SCRIPT_DIR/SOUL.md" "$WORKSPACE/" "SOUL.md"
+copy_file "$SCRIPT_DIR/AGENTS.md" "$WORKSPACE/" "AGENTS.md"
+copy_file "$SCRIPT_DIR/CORE_PHILOSOPHY.md" "$WORKSPACE/" "CORE_PHILOSOPHY.md"
+copy_file "$SCRIPT_DIR/PROGRESS_PROTOCOL.md" "$WORKSPACE/" "PROGRESS_PROTOCOL.md"
+copy_file "$SCRIPT_DIR/MASTER_STATE.md" "$WORKSPACE/" "MASTER_STATE.md"
+copy_file "$SCRIPT_DIR/TOOLS.md" "$WORKSPACE/" "TOOLS.md"
 
 echo ""
 
@@ -59,10 +90,10 @@ echo ""
 # ─────────────────────────────────────────────────────────────────
 echo -e "${CYAN}[2/4] Setting up templates...${NC}"
 
-cp "$SCRIPT_DIR/templates/IDENTITY.template.md" "$WORKSPACE/IDENTITY.md" 2>/dev/null && echo -e "   ${GREEN}✓${NC} IDENTITY.md (from template)"
-cp "$SCRIPT_DIR/templates/USER.template.md" "$WORKSPACE/USER.md" 2>/dev/null && echo -e "   ${GREEN}✓${NC} USER.md (from template)"
-cp "$SCRIPT_DIR/templates/MEMORY.template.md" "$WORKSPACE/MEMORY.md" 2>/dev/null && echo -e "   ${GREEN}✓${NC} MEMORY.md (from template)"
-cp "$SCRIPT_DIR/templates/HEARTBEAT.template.md" "$WORKSPACE/HEARTBEAT.md" 2>/dev/null && echo -e "   ${GREEN}✓${NC} HEARTBEAT.md (from template)"
+copy_file "$SCRIPT_DIR/templates/IDENTITY.template.md" "$WORKSPACE/IDENTITY.md" "IDENTITY.md (from template)"
+copy_file "$SCRIPT_DIR/templates/USER.template.md" "$WORKSPACE/USER.md" "USER.md (from template)"
+copy_file "$SCRIPT_DIR/templates/MEMORY.template.md" "$WORKSPACE/MEMORY.md" "MEMORY.md (from template)"
+copy_file "$SCRIPT_DIR/templates/HEARTBEAT.template.md" "$WORKSPACE/HEARTBEAT.md" "HEARTBEAT.md (from template)"
 
 echo ""
 
@@ -72,55 +103,27 @@ echo ""
 echo -e "${CYAN}[3/4] Personalizing your JARVIS...${NC}"
 echo ""
 
-# Get user's name
+# Input handling with fallbacks using bash parameter expansion
 read -p "$(echo -e ${YELLOW}What should JARVIS call you?${NC} (e.g., Vamsi): )" USER_NAME
-if [ -z "$USER_NAME" ]; then
-    USER_NAME="User"
-fi
+USER_NAME=${USER_NAME:-"User"}
 
-# Get AI name preference
 read -p "$(echo -e ${YELLOW}What should your AI be named?${NC} (default: JARVIS): )" AI_NAME
-if [ -z "$AI_NAME" ]; then
-    AI_NAME="JARVIS"
-fi
+AI_NAME=${AI_NAME:-"JARVIS"}
 
-# Get timezone
 read -p "$(echo -e ${YELLOW}Your timezone?${NC} (default: Asia/Calcutta): )" TIMEZONE
-if [ -z "$TIMEZONE" ]; then
-    TIMEZONE="Asia/Calcutta"
-fi
+TIMEZONE=${TIMEZONE:-"Asia/Calcutta"}
 
-# Update IDENTITY.md with user's name
-if [ -f "$WORKSPACE/IDENTITY.md" ]; then
-    # Replace placeholders
-    sed -i "s/<YOUR_NAME>/$USER_NAME/g" "$WORKSPACE/IDENTITY.md" 2>/dev/null || \
-    sed -i '' "s/<YOUR_NAME>/$USER_NAME/g" "$WORKSPACE/IDENTITY.md"
-    
-    # Replace AI name
-    sed -i "s/<YOUR_AI_NAME>/$AI_NAME/g" "$WORKSPACE/IDENTITY.md" 2>/dev/null || \
-    sed -i '' "s/<YOUR_AI_NAME>/$AI_NAME/g" "$WORKSPACE/IDENTITY.md"
-    
-    echo -e "   ${GREEN}✓${NC} IDENTITY.md personalized"
-fi
+# Apply replacements
+replace_text "$WORKSPACE/IDENTITY.md" "<YOUR_NAME>" "$USER_NAME"
+replace_text "$WORKSPACE/IDENTITY.md" "<YOUR_AI_NAME>" "$AI_NAME"
+echo -e "   ${GREEN}✓${NC} IDENTITY.md personalized"
 
-# Update USER.md with user's name
-if [ -f "$WORKSPACE/USER.md" ]; then
-    sed -i "s/<YOUR_NAME>/$USER_NAME/g" "$WORKSPACE/USER.md" 2>/dev/null || \
-    sed -i '' "s/<YOUR_NAME>/$USER_NAME/g" "$WORKSPACE/USER.md"
-    
-    sed -i "s/<YOUR_TIMEZONE>/$TIMEZONE/g" "$WORKSPACE/USER.md" 2>/dev/null || \
-    sed -i '' "s/<YOUR_TIMEZONE>/$TIMEZONE/g" "$WORKSPACE/USER.md"
-    
-    echo -e "   ${GREEN}✓${NC} USER.md personalized"
-fi
+replace_text "$WORKSPACE/USER.md" "<YOUR_NAME>" "$USER_NAME"
+replace_text "$WORKSPACE/USER.md" "<YOUR_TIMEZONE>" "$TIMEZONE"
+echo -e "   ${GREEN}✓${NC} USER.md personalized"
 
-# Update MEMORY.md with timezone
-if [ -f "$WORKSPACE/MEMORY.md" ]; then
-    sed -i "s/<YOUR_TIMEZONE>/$TIMEZONE/g" "$WORKSPACE/MEMORY.md" 2>/dev/null || \
-    sed -i '' "s/<YOUR_TIMEZONE>/$TIMEZONE/g" "$WORKSPACE/MEMORY.md"
-    
-    echo -e "   ${GREEN}✓${NC} MEMORY.md personalized"
-fi
+replace_text "$WORKSPACE/MEMORY.md" "<YOUR_TIMEZONE>" "$TIMEZONE"
+echo -e "   ${GREEN}✓${NC} MEMORY.md personalized"
 
 echo ""
 
