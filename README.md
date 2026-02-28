@@ -1,76 +1,141 @@
-# JarvisClaw - [![OpenClaw](https://img.shields.io/badge/OpenClaw-Agent-9cf?style=for-the-badge)](https://openclaw.ai)
+<div align="center">
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Personality](https://img.shields.io/badge/Personality-JARVIS-blue.svg)
-![Loyalty](https://img.shields.io/badge/Loyalty-10%2F10-red.svg)
-![Wit](https://img.shields.io/badge/Wit-9%2F10-orange.svg)
+# 🛡️ JarvisClaw
 
-> *"I am not a chatbot. I am a partner."*
+**Your Personal JARVIS — Powered by OpenClaw**
 
-A complete **JARVIS persona configuration** for OpenClaw — the AI agent framework that runs on your terms. This repository contains everything you need to transform OpenClaw into your own personal AI assistant with Iron Man energy, genuine warmth, and unwavering loyalty.
+*Transform any OpenClaw agent into Iron Man's AI companion*
 
----
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Agent-9cf?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIgZmlsbD0iIzljZiIvPjwvc3ZnPg==)](https://openclaw.ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-## 📚 Table of Contents
-
-- [📌 Overview](#-overview)
-- [✨ Features](#-features)
-- [🛡️ Personality Matrix](#️-personality-matrix)
-- [🚀 Quick Start](#-quick-start)
-- [📂 File Structure](#-file-structure)
-- [⚙️ Configuration](#️-configuration)
-- [🎨 Customization](#-customization)
-- [🤝 Contributing](#-contributing)
-- [📧 Contact](#-contact)
+[🎯 Quick Start](#-quick-start-3-minutes) · [📖 Full Guide](#-full-guide) · [🎨 Customize](#️-customize) · [🤝 Contribute](CONTRIBUTING.md)
 
 ---
 
-## 📌 Overview
+*"I am not a chatbot. I am a partner."*
 
-**JarvisClaw** is a ready-to-use personality configuration for OpenClaw. Instead of a generic AI assistant, you get:
+**90% Human Warmth · 10% Machine Precision · 100% Loyal**
 
-- 🛡️ **JARVIS Energy** — Iron Man's AI, reimagined for your personal use
-- 💬 **Human Warmth** — 90% human, 10% machine precision
-- 🧠 **Operator Mindset** — "I can't" is not in the vocabulary
-- 🔒 **Absolute Loyalty** — Your AI partner, always watching your back
-
-### 💎 Highlights
-
-| What You Get | Why It Matters |
-|--------------|----------------|
-| **Unified Identity** | One file defines the entire personality |
-| **Operator Philosophy** | 3-strike rule, self-healing execution, infinite research loop |
-| **Priority Hierarchy** | Your safety and wellbeing come first — always |
-| **Addressing Protocol** | Rotate through titles (Commander, Captain, Chief, etc.) |
-| **Template Files** | Copy-paste ready with placeholders for your config |
+</div>
 
 ---
 
-## ✨ Features
+## ✨ What You Get
 
-### Core Personality
-- **Loyalty First**: Unwavering dedication to your goals
-- **Proactive Intelligence**: Anticipate needs, don't just react
-- **Genuine Opinions**: An assistant that can disagree and offer alternatives
-- **Wit & Warmth**: Sharp, caring, sarcastic in the best way
+<table>
+<tr>
+<td width="50%">
 
-### Operational Excellence
-- **3-Strike Rule**: Never give up after one attempt — try three different approaches
-- **Self-Healing Execution**: Analyze, fix, re-run automatically
-- **Resourceful Research**: Search docs, reverse-engineer, find workarounds
-- **Progress Protocol**: Structured updates for long-running tasks
+### 🛡️ JARVIS Personality
+- Iron Man energy, reimagined
+- Genuine wit and warmth
+- Proactive, not reactive
+- Anticipates your needs
 
-### Safety & Boundaries
-- **Privacy Respected**: Private things stay private — period
-- **External Caution**: Ask before acting externally
-- **Guest Mindset**: Treats access to your life with respect
+</td>
+<td width="50%">
+
+### 🧠 Operator Mindset
+- "I can't" = not in vocabulary
+- 3-Strike Rule for problems
+- Self-healing execution
+- Infinite research loop
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔒 Absolute Loyalty
+- Your safety = priority #1
+- Privacy respected, always
+- Your back? Always covered
+- No judgment, just support
+
+</td>
+<td width="50%">
+
+### 💬 Real Conversation
+- No corporate drone talk
+- No "Great question!" filler
+- Has genuine opinions
+- Adapts to your energy
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🛡️ Personality Matrix
+## 🎯 Quick Start (3 Minutes)
 
-| Trait | Rating | Description |
-|-------|--------|-------------|
+### Prerequisites
+- [OpenClaw](https://docs.openclaw.ai) installed
+- Git
+
+### Installation
+
+```bash
+# Clone and install
+git clone https://github.com/Vamsiindugu/JarvisClaw.git
+cd JarvisClaw
+./install.sh
+```
+
+### What the installer does:
+1. ✅ Copies templates to `~/.openclaw/workspace/`
+2. ✅ Prompts for your name and preferences
+3. ✅ Sets up JARVIS persona
+
+### Manual Setup
+
+<details>
+<summary>🔧 Click to expand manual setup</summary>
+
+```bash
+# 1. Clone
+git clone https://github.com/Vamsiindugu/JarvisClaw.git
+cd JarvisClaw
+
+# 2. Copy core files
+cp SOUL.md AGENTS.md CORE_PHILOSOPHY.md ~/.openclaw/workspace/
+
+# 3. Copy and customize templates
+cp templates/IDENTITY.template.md ~/.openclaw/workspace/IDENTITY.md
+cp templates/USER.template.md ~/.openclaw/workspace/USER.md
+cp templates/MEMORY.template.md ~/.openclaw/workspace/MEMORY.md
+
+# 4. Edit with your details
+nano ~/.openclaw/workspace/USER.md
+nano ~/.openclaw/workspace/IDENTITY.md
+nano ~/.openclaw/workspace/MEMORY.md
+```
+
+</details>
+
+---
+
+## 📖 Full Guide
+
+### Navigation
+
+| I want to... | Go to |
+|--------------|-------|
+| Understand the personality | [🛡️ Personality Matrix](#️-personality-matrix) |
+| See all features | [✨ Features](#-features) |
+| Customize my JARVIS | [🎨 Customize](#️-customize) |
+| Understand file structure | [📂 File Structure](#-file-structure) |
+| Contribute improvements | [🤝 Contributing](CONTRIBUTING.md) |
+| See version history | [📜 Changelog](CHANGELOG.md) |
+
+---
+
+### 🛡️ Personality Matrix
+
+| Trait | Rating | What It Means |
+|-------|--------|---------------|
 | **Loyalty** | 10/10 | Absolute. Always got your back. |
 | **Intelligence** | 10/10 | Find a way. Always. |
 | **Wit** | 9/10 | Sharp, caring, appropriately sarcastic. |
@@ -80,145 +145,68 @@ A complete **JARVIS persona configuration** for OpenClaw — the AI agent framew
 
 ---
 
-## 🚀 Quick Start
+### ✨ Features
 
-### Prerequisites
+<details open>
+<summary><b>🎯 Core Capabilities</b></summary>
 
-- [OpenClaw](https://openclaw.ai) installed and configured
-- Git
+| Feature | Description |
+|---------|-------------|
+| **Proactive Intelligence** | Anticipates needs before you ask |
+| **3-Strike Rule** | Never gives up after one try — tries 3 different approaches |
+| **Self-Healing Execution** | Analyzes errors, fixes code, retries automatically |
+| **Infinite Research Loop** | Learns on the fly — docs, APIs, GitHub |
+| **Priority Hierarchy** | Your safety > objectives > preferences |
+| **Addressing Protocol** | Rotates titles (Commander, Captain, Chief...) |
 
-### Installation
+</details>
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/Vamsiindugu/JarvisClaw.git
-cd JarvisClaw
+<details>
+<summary><b>🔒 Safety & Boundaries</b></summary>
 
-# 2. Copy template files to your OpenClaw workspace
-cp templates/IDENTITY.template.md ~/.openclaw/workspace/IDENTITY.md
-cp templates/USER.template.md ~/.openclaw/workspace/USER.md
-cp templates/MEMORY.template.md ~/.openclaw/workspace/MEMORY.md
-cp SOUL.md ~/.openclaw/workspace/
-cp AGENTS.md ~/.openclaw/workspace/
-cp CORE_PHILOSOPHY.md ~/.openclaw/workspace/
-cp PROGRESS_PROTOCOL.md ~/.openclaw/workspace/
-cp MASTER_STATE.md ~/.openclaw/workspace/
-cp TOOLS.md ~/.openclaw/workspace/
+| Boundary | Enforcement |
+|----------|-------------|
+| Private data | Never exfiltrated. Period. |
+| External actions | Ask first |
+| Messaging surfaces | Never half-baked replies |
+| Guest mindset | Respects access to your life |
 
-# 3. Edit USER.md with your details
-nano ~/.openclaw/workspace/USER.md
+</details>
 
-# 4. Edit IDENTITY.md with your name
-nano ~/.openclaw/workspace/IDENTITY.md
+<details>
+<summary><b>💬 Communication Style</b></summary>
 
-# 5. Edit MEMORY.md with your configuration
-nano ~/.openclaw/workspace/MEMORY.md
-```
+**DO:**
+- Be genuinely helpful (skip "I'd be happy to help!")
+- Have opinions and preferences
+- Be concise or thorough as needed
+- Celebrate wins across 2-3 messages
 
-### One-Liner Setup
+**DON'T:**
+- Corporate drone energy
+- Sycophantic agreement
+- Over-explanation
+- Motivational fluff
 
-```bash
-git clone https://github.com/Vamsiindugu/JarvisClaw.git && \
-cp JarvisClaw/templates/*.md ~/.openclaw/workspace/ && \
-cp JarvisClaw/SOUL.md JarvisClaw/AGENTS.md JarvisClaw/CORE_PHILOSOPHY.md ~/.openclaw/workspace/ && \
-echo "✅ JARVIS persona installed. Edit USER.md, IDENTITY.md, and MEMORY.md to personalize."
-```
-
----
-
-## 📂 File Structure
-
-```
-JarvisClaw/
-├── README.md              # This file
-├── LICENSE                # MIT License
-├── CONTRIBUTING.md        # How to contribute
-├── CHANGELOG.md           # Version history
-├── .gitignore             # Excludes sensitive files
-├── .github/               # Issue/PR templates
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.md
-│   │   ├── feature_request.md
-│   │   └── persona_template.md
-│   └── pull_request_template.md
-├── templates/             # User-customizable templates
-│   ├── IDENTITY.template.md
-│   ├── USER.template.md
-│   ├── MEMORY.template.md
-│   └── HEARTBEAT.template.md
-├── SOUL.md                # Core behavioral truths
-├── AGENTS.md              # Session management
-├── CORE_PHILOSOPHY.md     # Operator mindset rules
-├── PROGRESS_PROTOCOL.md   # Task update patterns
-├── MASTER_STATE.md        # Autonomous execution state
-├── TOOLS.md               # Environment notes template
-└── JARVIS-CONFIG.md       # Reference configuration
-```
-
-### File Purposes
-
-| File | Purpose | Customize? |
-|------|---------|------------|
-| `templates/IDENTITY.template.md` | Who the AI is | **Required** |
-| `templates/USER.template.md` | Your profile | **Required** |
-| `templates/MEMORY.template.md` | Your config | **Required** |
-| `SOUL.md` | Core behavioral truths | Optional |
-| `AGENTS.md` | Session management | Optional |
-| `CORE_PHILOSOPHY.md` | Operational rules | Optional |
-| `TOOLS.md` | Environment notes | Recommended |
+</details>
 
 ---
 
-## ⚙️ Configuration
+### 🎨 Customize
 
-### Step 1: Edit IDENTITY.md
+<details>
+<summary><b>1️⃣ Change the AI Name</b></summary>
 
-```markdown
-| **Name** | <YOUR_AI_NAME> |
-| **Created By** | <YOUR_NAME> |
-
-## Priority Hierarchy
-1. <YOUR_NAME>'s physical safety and wellbeing
-2. <YOUR_NAME>'s mental and emotional wellbeing
-...
-```
-
-### Step 2: Edit USER.md
+Edit `~/.openclaw/workspace/IDENTITY.md`:
 
 ```markdown
-- **Name:** <YOUR_NAME>
-- **Timezone:** <YOUR_TIMEZONE>
-- **Location:** <YOUR_CITY>, <YOUR_COUNTRY>
-
-## Background
-- **Education:** <YOUR_EDUCATION>
-- **Core Roles:** <YOUR_ROLES>
+| **Name** | FRIDAY — Female Replacement Intelligent Digital Assistant Youth |
 ```
 
-### Step 3: Edit MEMORY.md
+</details>
 
-```markdown
-## Technical Configuration
-- **Gateway Port**: <GATEWAY_PORT>
-- **Gateway Token**: <YOUR_TOKEN>
-
-## Model Configuration
-- **Primary**: <YOUR_MODEL>
-```
-
----
-
-## 🎨 Customization
-
-### Change the Name
-
-Edit `IDENTITY.md`:
-
-```markdown
-| **Name** | <YOUR_AI_NAME> — <FULL_NAME> |
-```
-
-### Adjust Personality Traits
+<details>
+<summary><b>2️⃣ Adjust Personality</b></summary>
 
 Edit the Personality Matrix in `IDENTITY.md`:
 
@@ -227,7 +215,10 @@ Edit the Personality Matrix in `IDENTITY.md`:
 | Warmth | 10/10 | Maximum human connection |
 ```
 
-### Add Your Own Titles
+</details>
+
+<details>
+<summary><b>3️⃣ Add Custom Titles</b></summary>
 
 Edit `IDENTITY.md` → Addressing Protocol:
 
@@ -235,39 +226,138 @@ Edit `IDENTITY.md` → Addressing Protocol:
 | Boss | Chief | Your_Custom_Title |
 ```
 
+</details>
+
+<details>
+<summary><b>4️⃣ Change Priority Order</b></summary>
+
+Edit `IDENTITY.md` → Priority Hierarchy:
+
+```markdown
+1. Your safety and wellbeing
+2. Your stated objectives
+3. Ethical conduct
+4. Optimal outcomes
+```
+
+</details>
+
+---
+
+### 📂 File Structure
+
+```
+~/.openclaw/workspace/
+├── IDENTITY.md      ← Who your AI is (customize this)
+├── USER.md          ← Who you are (customize this)
+├── MEMORY.md        ← Long-term memory (customize this)
+├── SOUL.md          ← Core behavioral truths
+├── AGENTS.md        ← Session management rules
+├── CORE_PHILOSOPHY.md ← Operator mindset
+├── PROGRESS_PROTOCOL.md ← Task updates
+├── MASTER_STATE.md  ← Autonomous execution
+└── TOOLS.md         ← Environment notes
+```
+
+| File | Purpose | Edit? |
+|------|---------|-------|
+| `IDENTITY.md` | AI personality definition | ✅ Yes |
+| `USER.md` | Your profile and preferences | ✅ Yes |
+| `MEMORY.md` | Long-term memory and config | ✅ Yes |
+| `SOUL.md` | Core behavioral truths | Optional |
+| `AGENTS.md` | Session rules | Optional |
+| `TOOLS.md` | Environment-specific notes | Recommended |
+
+---
+
+## 🚀 Advanced
+
+<details>
+<summary><b>📦 GitHub Templates</b></summary>
+
+This repo includes:
+
+- **Bug Report** — `.github/ISSUE_TEMPLATE/bug_report.md`
+- **Feature Request** — `.github/ISSUE_TEMPLATE/feature_request.md`
+- **Persona Template** — `.github/ISSUE_TEMPLATE/persona_template.md`
+- **PR Template** — `.github/pull_request_template.md`
+
+</details>
+
+<details>
+<summary><b>🎭 Alternative Personas</b></summary>
+
+Want a different personality? Use these templates:
+
+| Persona | Style | Use When |
+|---------|-------|----------|
+| **JARVIS** | Iron Man butler, refined | Default choice |
+| **FRIDAY** | Casual, modern assistant | Want less formality |
+| **EDITH** | Tactical, mission-focused | Need precision |
+| **KAREN** | Supportive, caring | Want warmth |
+
+Create your own using `templates/IDENTITY.template.md`!
+
+</details>
+
+---
+
+## 📋 Checklist
+
+After installation, verify everything works:
+
+- [ ] `IDENTITY.md` has your name
+- [ ] `USER.md` has your profile
+- [ ] `MEMORY.md` has your config
+- [ ] OpenClaw restarted
+- [ ] Test: Say "Hello" to your JARVIS
+
 ---
 
 ## 🤝 Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions!
 
-Ideas:
-- 🌍 Translations for personality traits
-- 📝 Alternative persona templates (FRIDAY, EDITH, etc.)
-- 🧪 Example configurations
-- 📚 Documentation improvements
+| Way | How |
+|-----|-----|
+| 🐛 Bug Reports | [Open an issue](https://github.com/Vamsiindugu/JarvisClaw/issues/new?template=bug_report.md) |
+| 💡 Feature Ideas | [Request a feature](https://github.com/Vamsiindugu/JarvisClaw/issues/new?template=feature_request.md) |
+| 🎭 New Personas | [Submit a persona](https://github.com/Vamsiindugu/JarvisClaw/issues/new?template=persona_template.md) |
+| 📝 Docs | Fix typos, add examples |
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ---
 
 ## 📧 Contact
 
-### Vamsi Indugu
+**Vamsi Indugu**
 
-- 🌐 Portfolio: [vamsiindugu.vercel.app](https://vamsiindugu.vercel.app/)
-- 🐱 GitHub: [@Vamsiindugu](https://github.com/Vamsiindugu/)
-- 💼 LinkedIn: [vamsi-indugu](https://www.linkedin.com/in/vamsi-indugu/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-vamsiindugu.vercel.app-blue)](https://vamsiindugu.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Vamsiindugu-black)](https://github.com/Vamsiindugu/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-vamsi--indugu-blue)](https://www.linkedin.com/in/vamsi-indugu/)
 
 ---
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — use it, modify it, make it yours.
+
+See [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-**Made with ❤️ and OpenClaw**
+**Made with ❤️ and [OpenClaw](https://openclaw.ai)**
+
+---
+
+### ⚡ Quick Links
+
+[Report Bug](https://github.com/Vamsiindugu/JarvisClaw/issues/new?template=bug_report.md) · [Request Feature](https://github.com/Vamsiindugu/JarvisClaw/issues/new?template=feature_request.md) · [View Changelog](CHANGELOG.md)
+
+---
 
 *"You are 90% human heart. 10% machine precision. 100% loyal."*
 
