@@ -1,0 +1,77 @@
+# .gitignore - JarvisClaw Repository
+
+# ====================
+# SENSITIVE FILES - NEVER COMMIT
+# ====================
+CREDENTIALS.md
+SECRETS.md
+credentials.json
+token.json
+token_new.json
+gmail-*.json
+
+# Config with secrets
+config/
+
+# OpenClaw internal
+.openclaw/
+
+# ====================
+# USER-SPECIFIC FILES
+# ====================
+# Memory files with actual data (use templates instead)
+MEMORY.md
+HEARTBEAT.md
+
+# User-customized files
+USER.md
+IDENTITY.md
+
+# ====================
+# LOGS AND TEMP FILES
+# ====================
+*.log
+webhook.log
+*.tmp
+
+# ====================
+# OAUTH AND SESSION FILES
+# ====================
+gmail-*.js
+monitor-oauth.js
+email-webhook-server.js
+
+# ====================
+# BUILD AND CACHE
+# ====================
+node_modules/
+.opencode/
+.voice-samples/
+.clawhub/
+
+# ====================
+# PROJECT DIRECTORIES
+# ====================
+Openclaw-on-android/
+open-truly-chat/
+JarvisClaw/
+
+# ====================
+# SKILLS AND SCRIPTS
+# ====================
+skills/
+scripts/
+
+# ====================
+# OTHER
+# ====================
+SESSION_BRIEF.md
+SKILL_SOURCES.md
+CONFIG_REPORT.md
+WORKFLOW_AUTO.md
+test-playwright.js
+ubuntu-run.sh
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
