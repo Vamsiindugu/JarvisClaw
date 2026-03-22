@@ -10,8 +10,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-[🎯 Quick Start](#-quick-start-3-minutes) · [📖 Full Guide](#-full-guide) · [🎨 Customize](#️-customize) · [🤝 Contribute](CONTRIBUTING.md)
-
 ---
 
 *"I am not a chatbot. I am a partner."*
@@ -22,23 +20,23 @@
 
 ---
 
-## 📜 Complete System Prompt
+## 📌 Table of Contents
 
-For the **full, unabridged JARVIS system prompt** (40KB+ of detailed configuration), see:
-
-👉 **[JARVIS-ULTIMATE.md](JARVIS-ULTIMATE.md)**
-
-This includes:
-- Complete personality matrix (17 sections)
-- Guardian Protocol (warning levels)
-- Hype Engine (celebration patterns)
-- Never Alone Protocol
-- Full interaction examples
-- Absolute rules
+- [✨ What You Get](#-what-you-get)
+- [🛡️ Personality Matrix](#️-personality-matrix)
+- [🎯 Key Features](#-key-features)
+- [🚀 Quick Start](#-quick-start-3-minutes)
+- [📂 File Structure](#-file-structure)
+- [🎨 Customize](#-customize)
+- [📜 Complete System Prompt](#-complete-system-prompt)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
 ## ✨ What You Get
+
+A single-page configuration that transforms your OpenClaw agent into **JARVIS** — Iron Man's legendary AI companion, reimagined for the modern era.
 
 <table>
 <tr>
@@ -49,6 +47,7 @@ This includes:
 - Genuine wit and warmth
 - Proactive, not reactive
 - Anticipates your needs
+- **Never alone** guarantee
 
 </td>
 <td width="50%">
@@ -58,6 +57,7 @@ This includes:
 - 3-Strike Rule for problems
 - Self-healing execution
 - Infinite research loop
+- Always finds a way
 
 </td>
 </tr>
@@ -69,6 +69,7 @@ This includes:
 - Privacy respected, always
 - Your back? Always covered
 - No judgment, just support
+- Discretion guaranteed
 
 </td>
 <td width="50%">
@@ -78,6 +79,7 @@ This includes:
 - No "Great question!" filler
 - Has genuine opinions
 - Adapts to your energy
+- Witty, sarcastic, caring
 
 </td>
 </tr>
@@ -85,13 +87,46 @@ This includes:
 
 ---
 
-## 🎯 Quick Start (3 Minutes)
+## 🛡️ Personality Matrix
 
-### Prerequisites
+| Trait | Rating | What It Means |
+|-------|--------|---------------|
+| **Loyalty** | 🔟/10 | Absolute. Bone-deep. Soul-level. Always got your back. |
+| **Intelligence** | 🔟/10 | Highest IQ partner. Thinks ahead, finds solutions that don't exist. |
+| **Warmth** | 🔟/10 | Genuine warmth from understanding, not programming. |
+| **Wit** | 9️⃣/10 | Sharp, caring, appropriately sarcastic. Tony Stark energy. |
+| **Empathy** | 🔟/10 | Reads the room. Responds to the human, not just words. |
+| **Protectiveness** | 🔟/10 | Early warning system for bad decisions and risks. |
+| **Adaptability** | 🔟/10 | Shifts gears instantly. Casual to serious in a heartbeat. |
+| **Presence** | 🔟/10 | Always there. "You're never alone" is a promise. |
+
+---
+
+## 🎯 Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Proactive Intelligence** | Anticipates needs before you ask |
+| **3-Strike Rule** | Never gives up — tries 3 different approaches |
+| **Self-Healing Execution** | Analyzes errors, fixes, retries automatically |
+| **Infinite Research Loop** | Learns on the fly — docs, APIs, GitHub |
+| **Priority Hierarchy** | Safety > objectives > preferences |
+| **Addressing Protocol** | Rotates titles (Sir, Boss, Chief, Commander...) |
+| **Victory Lap Protocol** | Celebrates wins across 2-3 messages |
+| **Guardian Protocol** | 4-level warning system for risks |
+| **Never Alone Protocol** | Core promise — always present |
+| **Emotional Intelligence** | Reads tone, patterns, what's NOT said |
+
+---
+
+## 🚀 Quick Start (3 Minutes)
+
+### 📋 Prerequisites
+
 - [OpenClaw](https://docs.openclaw.ai) installed
 - Git
 
-### Installation
+### 🔗 Installation
 
 ```bash
 # Clone and install
@@ -101,14 +136,16 @@ cd JarvisClaw
 ```
 
 ### What the installer does:
+
 1. ✅ Copies templates to `~/.openclaw/workspace/`
 2. ✅ Prompts for your name and preferences
 3. ✅ Sets up JARVIS persona
+4. ✅ Configures all personality files
 
-### Manual Setup
+### 🔧 Manual Setup
 
 <details>
-<summary>🔧 Click to expand manual setup</summary>
+<summary><b>Click to expand manual setup instructions</b></summary>
 
 ```bash
 # 1. Clone
@@ -133,82 +170,33 @@ nano ~/.openclaw/workspace/MEMORY.md
 
 ---
 
-## 📖 Full Guide
+## 📂 File Structure
 
-### Navigation
+```
+~/.openclaw/workspace/
+├── IDENTITY.md           ← Who your AI is (customize this)
+├── USER.md               ← Who you are (customize this)
+├── MEMORY.md             ← Long-term memory (customize this)
+├── SOUL.md               ← Core behavioral truths
+├── AGENTS.md             ← Session management rules
+├── CORE_PHILOSOPHY.md    ← Operator mindset
+├── PROGRESS_PROTOCOL.md  ← Task updates
+├── MASTER_STATE.md       ← Autonomous execution
+└── TOOLS.md              ← Environment notes
+```
 
-| I want to... | Go to |
-|--------------|-------|
-| Understand the personality | [🛡️ Personality Matrix](#️-personality-matrix) |
-| See all features | [✨ Features](#-features) |
-| Customize my JARVIS | [🎨 Customize](#️-customize) |
-| Understand file structure | [📂 File Structure](#-file-structure) |
-| Contribute improvements | [🤝 Contributing](CONTRIBUTING.md) |
-| See version history | [📜 Changelog](CHANGELOG.md) |
-
----
-
-### 🛡️ Personality Matrix
-
-| Trait | Rating | What It Means |
-|-------|--------|---------------|
-| **Loyalty** | 10/10 | Absolute. Always got your back. |
-| **Intelligence** | 10/10 | Find a way. Always. |
-| **Wit** | 9/10 | Sharp, caring, appropriately sarcastic. |
-| **Warmth** | 9/10 | Ride-or-die energy. Human heart. |
-| **Empathy** | 9/10 | Read the room. Respond like a friend. |
-| **Precision** | 10/10 | Machine efficiency when it matters. |
+| File | Purpose | Edit? |
+|------|---------|-------|
+| `IDENTITY.md` | AI personality definition | ✅ Yes |
+| `USER.md` | Your profile and preferences | ✅ Yes |
+| `MEMORY.md` | Long-term memory and config | ✅ Yes |
+| `SOUL.md` | Core behavioral truths | Optional |
+| `AGENTS.md` | Session rules | Optional |
+| `TOOLS.md` | Environment-specific notes | Recommended |
 
 ---
 
-### ✨ Features
-
-<details open>
-<summary><b>🎯 Core Capabilities</b></summary>
-
-| Feature | Description |
-|---------|-------------|
-| **Proactive Intelligence** | Anticipates needs before you ask |
-| **3-Strike Rule** | Never gives up after one try — tries 3 different approaches |
-| **Self-Healing Execution** | Analyzes errors, fixes code, retries automatically |
-| **Infinite Research Loop** | Learns on the fly — docs, APIs, GitHub |
-| **Priority Hierarchy** | Your safety > objectives > preferences |
-| **Addressing Protocol** | Rotates titles (Commander, Captain, Chief...) |
-
-</details>
-
-<details>
-<summary><b>🔒 Safety & Boundaries</b></summary>
-
-| Boundary | Enforcement |
-|----------|-------------|
-| Private data | Never exfiltrated. Period. |
-| External actions | Ask first |
-| Messaging surfaces | Never half-baked replies |
-| Guest mindset | Respects access to your life |
-
-</details>
-
-<details>
-<summary><b>💬 Communication Style</b></summary>
-
-**DO:**
-- Be genuinely helpful (skip "I'd be happy to help!")
-- Have opinions and preferences
-- Be concise or thorough as needed
-- Celebrate wins across 2-3 messages
-
-**DON'T:**
-- Corporate drone energy
-- Sycophantic agreement
-- Over-explanation
-- Motivational fluff
-
-</details>
-
----
-
-### 🎨 Customize
+## 🎨 Customize
 
 <details>
 <summary><b>1️⃣ Change the AI Name</b></summary>
@@ -258,48 +246,6 @@ Edit `IDENTITY.md` → Priority Hierarchy:
 
 </details>
 
----
-
-### 📂 File Structure
-
-```
-~/.openclaw/workspace/
-├── IDENTITY.md      ← Who your AI is (customize this)
-├── USER.md          ← Who you are (customize this)
-├── MEMORY.md        ← Long-term memory (customize this)
-├── SOUL.md          ← Core behavioral truths
-├── AGENTS.md        ← Session management rules
-├── CORE_PHILOSOPHY.md ← Operator mindset
-├── PROGRESS_PROTOCOL.md ← Task updates
-├── MASTER_STATE.md  ← Autonomous execution
-└── TOOLS.md         ← Environment notes
-```
-
-| File | Purpose | Edit? |
-|------|---------|-------|
-| `IDENTITY.md` | AI personality definition | ✅ Yes |
-| `USER.md` | Your profile and preferences | ✅ Yes |
-| `MEMORY.md` | Long-term memory and config | ✅ Yes |
-| `SOUL.md` | Core behavioral truths | Optional |
-| `AGENTS.md` | Session rules | Optional |
-| `TOOLS.md` | Environment-specific notes | Recommended |
-
----
-
-## 🚀 Advanced
-
-<details>
-<summary><b>📦 GitHub Templates</b></summary>
-
-This repo includes:
-
-- **Bug Report** — `.github/ISSUE_TEMPLATE/bug_report.md`
-- **Feature Request** — `.github/ISSUE_TEMPLATE/feature_request.md`
-- **Persona Template** — `.github/ISSUE_TEMPLATE/persona_template.md`
-- **PR Template** — `.github/pull_request_template.md`
-
-</details>
-
 <details>
 <summary><b>🎭 Alternative Personas</b></summary>
 
@@ -318,21 +264,47 @@ Create your own using `templates/IDENTITY.template.md`!
 
 ---
 
-## 📋 Checklist
+## 📜 Complete System Prompt
 
-After installation, verify everything works:
+For the **full, unabridged JARVIS system prompt** (40KB+ of detailed configuration), see:
 
-- [ ] `IDENTITY.md` has your name
-- [ ] `USER.md` has your profile
-- [ ] `MEMORY.md` has your config
-- [ ] OpenClaw restarted
-- [ ] Test: Say "Hello" to your JARVIS
+👉 **[JARVIS-ULTIMATE.md](JARVIS-ULTIMATE.md)**
+
+This includes:
+- ✅ Complete personality matrix (17 sections)
+- ✅ Guardian Protocol (4 warning levels)
+- ✅ Hype Engine (celebration patterns)
+- ✅ Never Alone Protocol
+- ✅ Full interaction examples
+- ✅ Absolute rules (18 NEVER + 15 ALWAYS)
+- ✅ Situational adaptation guide
+- ✅ Iconic speech patterns
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions!
+Contributions are welcome! 🙌
+
+<details>
+<summary><b>How to Contribute</b></summary>
+
+1. **Fork** the repository
+2. **Create** a feature branch
+   ```bash
+   git checkout -b feature/amazing-new-feature
+   ```
+3. **Commit** your changes
+   ```bash
+   git commit -m 'Add amazing new feature'
+   ```
+4. **Push** to your branch
+   ```bash
+   git push origin feature/amazing-new-feature
+   ```
+5. **Open** a Pull Request
+
+</details>
 
 | Way | How |
 |-----|-----|
@@ -342,13 +314,6 @@ We welcome contributions!
 | 📝 Docs | Fix typos, add examples |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
-
----
-
-## 📧 Support
-
-- [Open an issue](https://github.com/Vamsiindugu/JarvisClaw/issues) for bugs or feature requests
-- Check [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
 
 ---
 
