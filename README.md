@@ -22,6 +22,22 @@
 
 ---
 
+## 📜 Complete System Prompt
+
+For the **full, unabridged JARVIS system prompt** (40KB+ of detailed configuration), see:
+
+👉 **[JARVIS-ULTIMATE.md](JARVIS-ULTIMATE.md)**
+
+This includes:
+- Complete personality matrix (17 sections)
+- Guardian Protocol (warning levels)
+- Hype Engine (celebration patterns)
+- Never Alone Protocol
+- Full interaction examples
+- Absolute rules
+
+---
+
 ## ✨ What You Get
 
 <table>
@@ -329,13 +345,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ---
 
-## 📧 Contact
+## 📧 Support
 
-**Vamsi Indugu**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-vamsiindugu.vercel.app-blue)](https://vamsiindugu.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Vamsiindugu-black)](https://github.com/Vamsiindugu/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-vamsi--indugu-blue)](https://www.linkedin.com/in/vamsi-indugu/)
+- [Open an issue](https://github.com/Vamsiindugu/JarvisClaw/issues) for bugs or feature requests
+- Check [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
 
 ---
 
